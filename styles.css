@@ -1,5 +1,17 @@
 html {
-  background-color: gray;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 body {
@@ -7,11 +19,18 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
   font-size: 3rem;
   margin: 0;
+}
+
+h1,
+h2 {
+  color: white;
 }
 
 .board {
@@ -42,7 +61,6 @@ button {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
   margin: 2vh 6vh;
   width: 8rem;
-  font-family: "TwitterColorEmoji";
   transition: transform 0.3s ease 0s, background-color 0.8s;
 }
 
